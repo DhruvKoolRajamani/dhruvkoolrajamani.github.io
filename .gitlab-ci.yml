@@ -15,7 +15,7 @@ test:
     paths:
     - test
   except:
-  - master
+  - example-cogimon
 
 pages:
   stage: deploy
@@ -25,5 +25,5 @@ pages:
     paths:
     - public
   only:
-  - master
+  - example-cogimon
 
