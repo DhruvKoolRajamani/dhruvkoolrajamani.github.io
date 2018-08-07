@@ -6,17 +6,17 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Example Jekyll site using GitLab Pages
-email: your-email@domain.com
+title: DhruvKoolRajamani
+email: dhruvkoolrajamani@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  My interests lie in the field of non-linear control and Robot dynamics. To cultivate my interest, I am researching on the control of a flexible manipulator using differential flatness.
+I am a robotics enthusiast and wish to pursue further studies to better develop my interests and understanding of robots.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "/" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-exclude: ["README.md"]
+#highlighter: pygments
+permalink: /:title
