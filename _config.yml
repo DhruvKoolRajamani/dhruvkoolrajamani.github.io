@@ -9,8 +9,7 @@
 title: DhruvKoolRajamani
 email: dhruvkoolrajamani@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  My interests lie in the field of non-linear control and Robot dynamics. To cultivate my interest, I am researching on the control of a flexible manipulator using differential flatness.
-I am a robotics enthusiast and wish to pursue further studies to better develop my interests and understanding of robots.
+  My interests lie in the field of non-linear control and Robot dynamics. To cultivate my interest, I am researching on the control of a flexible manipulator using differential flatness. I am a robotics enthusiast and wish to pursue further studies to better develop my interests and understanding of robots.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 twitter_username: jekyllrb
