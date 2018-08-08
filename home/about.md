@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Getting Started
-section: runtime/gettingstarted
+title: About
+section: home/about
 ---
 
 <div class="page-header">
 
-  <h1>Getting Started</h1>
+  <h1>Dhruv Kool Rajamani</h1>
 
 <!--   To get a feel for how the CogiMon modeling toolchain shall work and how you can use it to design control architecture
 for hybrid force and motion controllers, check out this intro video: -->

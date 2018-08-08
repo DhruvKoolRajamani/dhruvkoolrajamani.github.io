@@ -1,7 +1,7 @@
 ---
 layout: default
-title: CogIMon Component Library
-section: runtime/overview
+title: Projects
+section: home/overview
 ---
 <style>
   h3 {
