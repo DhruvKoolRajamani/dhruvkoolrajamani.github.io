@@ -616,6 +616,7 @@ color: #2c3e50;
 		position: relative;
 		/* overflow: hidden; */
 		padding-top: 56.25%;
+		background-color: white;
 	}
 
 	.resp-iframe {
@@ -626,7 +627,13 @@ color: #2c3e50;
 		height: 80%;
 		border: 0;
 		margin: 0px 40px auto;
-		display: block
+		display: block;
+		background-color: white;
+	}
+
+	.row.equal {
+		display: flex;
+		flex-wrap: wrap;
 	}
 }
 
@@ -640,7 +647,8 @@ color: #2c3e50;
 .resp-container {
 	position: relative;
     overflow: hidden;
-    padding-top: 56.25%;
+	padding-top: 56.25%;
+	background-color: white;
 }
 
 .resp-iframe {
@@ -651,7 +659,8 @@ color: #2c3e50;
     height: 80%;
 	border: 0;
 	margin: 0px 40px auto;
-	display: block
+	display: block;
+	background-color: white;
 }
 
 @media (max-width: 768px) {
@@ -659,6 +668,7 @@ color: #2c3e50;
 		position: relative;
 		/* overflow: hidden; */
 		padding-top: 56.25%;
+		background-color: white;
 	}
 
 	.resp-iframe {
@@ -669,6 +679,13 @@ color: #2c3e50;
 		height: 100%;
 		border: 0;
 		margin: 0px 0px auto;
-		display: block
+		display: block;
+		background-color: white;
 	}
 }
+
+.equal {
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+  }
