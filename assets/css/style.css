@@ -409,35 +409,38 @@ ol.type li a:hover {
 .hover-bg:hover .hover-text {
 	opacity: 1;
 }
-#portfolio i.fa {
+#projects i.fa {
 	font-size: 20px;
 	padding: 5px;
 	color: #E87E04;
 }
 /* Achivements Section */
-#achievements {
+#projects {
 	padding: 100px 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100 */
-	background: rgb(107,77,168); /* Old browsers */
-	background: -moz-linear-gradient(left, rgba(107,77,168,1) 0%, rgba(73,119,194,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, rgba(107,77,168,1) 0%, rgba(73,119,194,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, rgba(107,77,168,1) 0%, rgba(73,119,194,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: #f6f6f6; /* Old browsers */
+	background: -moz-linear-gradient(left, #f6f6f6, #f6f6f6); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #f6f6f6, #f6f6f6); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #f6f6f6, #f6f6f6); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', endColorstr='#4977c2', GradientType=1 ); /* IE6-9 */
 }
-#achievements h2 {
+#resume h2 {
 	color: #fff;
 }
-#achievements hr {
-	background: rgba(255,255,255,0.3);
+#resume {
+	background: rgba(102, 102, 102, 0.753);
 }
-.achievement-box h4 {
+#resume hr {
+	background: rgb(226, 225, 225);
+}
+.resume-box h4 {
 	color: #fff;
 	font-size: 16px;
 	font-weight: 400;
 	margin-left: 5px;
 	text-transform: uppercase;
 }
-.achievement-box span.count {
+.resume-box span.count {
 	font-size: 52px;
 	font-weight: 600;
 	display: block;
@@ -689,3 +692,62 @@ color: #2c3e50;
 	display: -webkit-flex;
 	flex-wrap: wrap;
   }
+
+/* outer wrapper: set max-width & max-height; max-height greater than padding-bottom % will be ineffective and height will = padding-bottom % of max-width */
+#Iframe-Master-CC-and-Rs {
+	max-width: 70%;
+	max-height: 80%; 
+	overflow: hidden;
+  }
+  
+  /* inner wrapper: make responsive */
+  .responsive-wrapper {
+	position: relative;
+	height: 0;    /* gets height from padding-bottom */
+	
+	/* put following styles (necessary for overflow and scrolling handling on mobile devices) inline in .responsive-wrapper around iframe because not stable in CSS:
+	  -webkit-overflow-scrolling: touch; overflow: auto; */
+	
+  }
+   
+  .responsive-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+	margin: 0;
+	padding: 0;
+	border: none;
+
+	-webkit-overflow-scrolling: touch; overflow: auto;
+  }
+  
+  /* padding-bottom = h/w as % -- sets aspect ratio */
+  /* YouTube video aspect ratio */
+  .responsive-wrapper-wxh-572x612 {
+	padding-bottom: 107%;
+  }
+  
+  /* general styles */
+  /* ============== */
+  /* .set-border {
+	border: 5px inset #4f4f4f;
+  }
+  .set-box-shadow { 
+	-webkit-box-shadow: 4px 4px 14px #4f4f4f;
+	-moz-box-shadow: 4px 4px 14px #4f4f4f;
+	box-shadow: 4px 4px 14px #4f4f4f;
+  }
+  .set-padding {
+	padding: 40px;
+  }
+  .set-margin {
+	margin: 30px;
+  } */
+  .center-block-horiz {
+	margin-left: auto !important;
+	margin-right: auto !important;
+  }
+  
