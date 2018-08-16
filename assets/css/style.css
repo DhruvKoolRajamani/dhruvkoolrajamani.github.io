@@ -246,7 +246,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', e
 	margin-bottom: 30px;
 }
 /* Skills Section */
-#videos {
+#skill {
 	padding: 100px 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100 */
 	background: rgb(107,77,168); /* Old browsers */
@@ -255,18 +255,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', e
 	background: linear-gradient(to right, rgba(107,77,168,1) 0%, rgba(73,119,194,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', endColorstr='#4977c2', GradientType=1 ); /* IE6-9 */
 }
-#videos h2 {
+#skill h2 {
 	color: #fff;
 }
-#videos hr {
+#skill hr {
 	background: rgba(255,255,255,0.3);
 }
-#videos .skill {
+#skill .skill {
 	margin-bottom: 40px;
 	text-align: center;
 	padding: 0px;
 }
-#videos .skill h4 {
+#skill .skill h4 {
 	font-weight: 600;
 	color: #fff;
 }
