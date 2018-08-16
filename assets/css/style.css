@@ -193,6 +193,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', end
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
+#proj {
+	background: #f1946e80;
+	border: 2px solid rgba(61, 47, 33, 0.61);
+	padding: 12px 20px;
+	margin: 0;
+	font-size: 15px;
+	border-radius: 0;
+	text-transform: uppercase;
+  }
 a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
 	outline: none;
 	outline-offset: none;
