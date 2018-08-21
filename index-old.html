@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Dhruv</title>
+  <meta name="description" content="Roboticist">
+  <meta name="author" content="Dhruv Kool Rajamani">
+  <meta name="google-site-verification" content="ARlPAQ14qLHpg76Vlm6rFlOHUtS_jiO7ViHJPYMjEq8" />
+
+  <!-- Favicons
+      ================================================== -->
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css"  href="assets/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/css/font-awesome.css">
+
+  <!-- Material -->
+  <link rel="stylesheet" href="assets/mdl/material.css">
+  <script src="assets/mdl/material.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Stylesheet
+      ================================================== -->
+  <link rel="stylesheet" type="text/css"  href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/prettyPhoto.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124056914-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-124056914-1');
+  </script>
+
+</head>
+<body> <!-- id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"> -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="android-title mdl-layout-title">
+            <img class="android-logo-image" src="images/android-logo.png">
+          </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search-field">
+            </div>
+          </div>
+          <!-- Navigation -->
+          <div class="android-navigation-container">
+            <nav class="android-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">TV</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play</a>
+            </nav>
+          </div>
+          <span class="android-mobile-title mdl-layout-title">
+            <img class="android-logo-image" src="images/android-logo.png">
+          </span>
+          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+            <li class="mdl-menu__item">5.0 Lollipop</li>
+            <li class="mdl-menu__item">4.4 KitKat</li>
+            <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
+            <li class="mdl-menu__item">Android History</li>
+          </ul>
+        </div>
+      </div>
+      <div class="android-drawer mdl-layout__drawer">
+        <header class="demo-drawer-header">
+          <img src="assets/img/aboutsmall.png" class="demo-avatar">
+          <div class="demo-avatar-dropdown">
+            <span>Dhruv Kool Rajamani</span>
+            <div class="mdl-layout-spacer"></div>
+          </div>
+        </header>
+        <!-- <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800"> -->
+        <nav class="mdl-navigation">
+          <div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="#page-top">Home</span>
+          <a class="mdl-navigation__link" href="#about">About</a>
+
+          <div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="https://gitlab.com/users/DhruvKoolRajamani/contributed">Projects</span>
+          <a class="mdl-navigation__link" href="#experience">Experience</a>
+          <a class="mdl-navigation__link" href="#projects">Gallery</a>
+          <a class="mdl-navigation__link" href="#resume" download>Resume</a>
+
+          <div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="#contact">Contact</span>
+        </nav>
+      </div>
+
+      <div class="android-content mdl-layout__content">
+        <a name="top"></a>
+        <div class="android-be-together-section mdl-typography--text-center">
+          <div class="logo-font android-slogan">be together. not the same.</div>
+          <div class="logo-font android-sub-slogan">welcome to android... be yourself. do your thing. see what's going on.</div>
+          <div class="logo-font android-create-character">
+            <a href=""><img src="images/andy.png"> create your android character</a>
+          </div>
+
+          <a href="#screens">
+            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+              <i class="material-icons">expand_more</i>
+            </button>
+          </a>
+        </div>
+        <div class="android-screen-section mdl-typography--text-center">
+          <a name="screens"></a>
+          <div class="mdl-typography--display-1-color-contrast">Powering screens of all sizes</div>
+          <div class="android-screens">
+            <div class="android-wear android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/wear-silver-on.png">
+                <img class="android-screen-image" src="images/wear-black-on.png">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android Wear</a>
+            </div>
+            <div class="android-phone android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/nexus6-on.jpg">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Phones</a>
+            </div>
+            <div class="android-tablet android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/nexus9-on.jpg">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Tablets</a>
+            </div>
+            <div class="android-tv android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/tv-on.jpg">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android TV</a>
+            </div>
+            <div class="android-auto android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/auto-on.jpg">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="">Coming Soon: Android Auto</a>
+            </div>
+          </div>
+        </div>
+        <div class="android-wear-section">
+          <div class="android-wear-band">
+            <div class="android-wear-band-text">
+              <div class="mdl-typography--display-2 mdl-typography--font-thin">The best of Google built in</div>
+              <p class="mdl-typography--headline mdl-typography--font-thin">
+                Android works perfectly with your favourite apps like Google Maps,
+                Calendar and YouTube.
+              </p>
+              <p>
+                <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
+                  See what's new in the Play Store&nbsp;<i class="material-icons">chevron_right</i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="android-customized-section">
+          <div class="android-customized-section-text">
+            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Customised by you, for you</div>
+            <p class="mdl-typography--font-light">
+              Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
+              <br>
+              <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
+            </p>
+          </div>
+          <div class="android-customized-section-image"></div>
+        </div>
+        <div class="android-more-section">
+          <div class="android-section-title mdl-typography--display-1-color-contrast">More from Android</div>
+          <div class="android-card-container mdl-grid">
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-1.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Get going on Android</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Four tips to make your switch to Android quick and easy</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Make the switch
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-4.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Create your own Android character</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Turn the little green Android mascot into you, your friends, anyone!</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   androidify.com
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-2.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Get a clean customisable home screen</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">A clean, simple, customisable home screen that comes with the power of Google Now: Traffic alerts, weather and much more, just a swipe away.</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Download now
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-3.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Millions to choose from</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Hail a taxi, find a recipe, run through a temple – Google Play has all the apps and games that let you make your Android device uniquely yours.</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Find apps
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="android-footer mdl-mega-footer">
+          <div class="mdl-mega-footer--top-section">
+            <div class="mdl-mega-footer--left-section">
+              <button class="mdl-mega-footer--social-btn"></button>
+              &nbsp;
+              <button class="mdl-mega-footer--social-btn"></button>
+              &nbsp;
+              <button class="mdl-mega-footer--social-btn"></button>
+            </div>
+            <div class="mdl-mega-footer--right-section">
+              <a class="mdl-typography--font-light" href="#top">
+                Back to Top
+                <i class="material-icons">expand_less</i>
+              </a>
+            </div>
+          </div>
+
+          <div class="mdl-mega-footer--middle-section">
+            <p class="mdl-typography--font-light">Satellite imagery: © 2014 Astrium, DigitalGlobe</p>
+            <p class="mdl-typography--font-light">Some features and devices may not be available in all areas</p>
+          </div>
+
+          <div class="mdl-mega-footer--bottom-section">
+            <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
+              Versions
+              <i class="material-icons">arrow_drop_up</i>
+            </a>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
+              <li class="mdl-menu__item">5.0 Lollipop</li>
+              <li class="mdl-menu__item">4.4 KitKat</li>
+              <li class="mdl-menu__item">4.3 Jelly Bean</li>
+              <li class="mdl-menu__item">Android History</li>
+            </ul>
+            <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
+              For Developers
+              <i class="material-icons">arrow_drop_up</i>
+            </a>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
+              <li class="mdl-menu__item">App developer resources</li>
+              <li class="mdl-menu__item">Android Open Source Project</li>
+              <li class="mdl-menu__item">Android SDK</li>
+              <li class="mdl-menu__item">Android for Work</li>
+            </ul>
+            <a class="android-link mdl-typography--font-light" href="">Blog</a>
+            <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
+          </div>
+
+        </footer>
+      </div>
+    </div>
+
+
+<!-- Header -->
+<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+
+
+<main class="mdl-layout__content mdl-color--grey-100">
+<header>
+<div class="intro text-center">
+  <div class="overlay">
+    <div class="container">
+      <div class="row">
+        <div class="intro-text">
+          <h1>Dhruv Kool Rajamani</h1>
+          <p>Roboticist</p>
+          <a href="#about" class="btn btn-default btn-lg page-scroll">Learn More</a>
+          <a href="#resume" class="btn btn-default btn-lg page-scroll" download>Resume</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>About</h2>
+      <hr>
+    </div>
+    <div class="mdl-grid portfolio-max-width">
+      <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-card mdl-shadow--2dp">
+        <div class="mdl-cell mdl-cell--6-col slide" data-ride="carousel">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">    
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="assets/img/img1.jpg" alt="">
+              </div>
+            
+              <div class="item">
+                <img src="assets/img/img2.jpg" alt="">
+              </div>
+            
+              <div class="item">
+                <img src="assets/img/img3.jpg" alt="">
+              </div>
+            </div>
+            
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <div class="mdl-card__supporting-text no-left-padding">
+            <p style="text-align:justify">
+              I've been tinkering with robots since Middle School with the advent of the LEGO Mindstorms robot. Supplementing my LEGO building skills with basic functional programming tools I began experimenting with microcontrollers through DIY Projects available online.
+              <br>
+              <br>
+              Fast forward to college, I continued expanding my interest in Robotics by joining a budding Robotics Team - <a href="http://www.marsrovermanipal.com/index.html">Mars Rover Manipal</a> and by the end of my first year, the team and I had designed our very own Mars Rover Prototype.
+              <br>
+              <br>
+              I cultivated my interest of Biomechanics through my internship at the <a href="http://www.biorob.epfl.ch">BioRobotics Lab</a> at EPFL where I was exposed to a plethora of bioligically inspired Robots. Inspired by the projects undertaken by the scholars at the Lab, I've co-founded a group in my University that is accessible to all like minded scholars. Being the first of it's kind, the Biorobotics Group is a community of scholars sharing their research and ideas, as well as a platform to teach others our knowledge of Robotics.
+            </p>
+          </div>
+        </div>
+        <div class="">
+          <div class="text-center center">
+            <p>
+              <b>Enough about me, come take a look at my Robots.</b>
+            </p>
+            <a href="#experience" class="btn btn-primary btn-lg page-scroll">Experience</a>
+            <a href="#projects" class="btn btn-primary btn-lg page-scroll">Gallery</a>
+            <a href="#resume" class="btn btn-primary btn-lg page-scroll">Resume</a>
+            <a class="btn btn-primary btn-lg page-scroll" href="https://gitlab.com/users/DhruvKoolRajamani/contributed">Projects</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Skills Section -->
+<!-- <div id="skills" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Skills</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">95</span> </span>
+        <h4>Robot Control Frameworks</h4>
+      </div>
+      <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="75"> <span class="percent">85</span> </span>
+        <h4>Programming</h4>
+      </div>
+      <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="85"> <span class="percent">80</span> </span>
+        <h4>CAD/CAM</h4>
+      </div>
+      <div class="col-md-3 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
+        <h4>Analysis and Simulations</h4>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!-- Experience Section -->
+<div id="experience">
+  <div class="container">
+    <div class="section-title center text-center">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2>experience</h2>
+      <hr>
+    </div>
+  <!--  
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="row testimonials">
+          <div class="col-sm-4">
+            <blockquote><i class="fa fa-quote-left"></i>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitduis sed dapibus leo nec ornare.</p>
+              <div class="clients-name">
+                <p><strong>John Doe</strong><br>
+                  <em>CEO, Company Inc.</em></p>
+              </div>
+            </blockquote>
+          </div>
+          <div class="col-sm-4">
+            <blockquote><i class="fa fa-quote-left"></i>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitduis sed dapibus leo nec ornare.</p>
+              <div class="clients-name">
+                <p><strong>Jane Doe</strong><br>
+                  <em>CEO, Company Inc.</em></p>
+              </div>
+            </blockquote>
+          </div>
+          <div class="col-sm-4">
+            <blockquote><i class="fa fa-quote-left"></i>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitduis sed dapibus leo nec ornare.</p>
+              <div class="clients-name">
+                <p><strong>Chris Smith</strong><br>
+                  <em>CEO, Company Inc.</em></p>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  -->
+    <div class="row equal">
+      <div class="col-sm-4 center">
+        <div>
+          <a href="https://biorob.epfl.ch/">
+            <img style="margin:0px auto;display:block" src="assets/img/Experience/biorob_en.svg" height="50" width="150">
+          </a>
+        </div>
+        <h4><i>Humanoid Walking</i></h4>
+        <p style="text-align:justify">
+          Developed a package using <i>OROCOS RTT</i> and <i>ROS</i> frameworks for simulating experiments on walking and implemented a controller for stepping, walking and active balance for the <i>COMAN</i> Humanoid Robot.
+        </p>
+        <p style="text-align:center">
+            <a href="https://gitlab.com/DhruvKoolRajamani/coman-ros-pkg">  
+              <small>Navigate to ROS simulation</small>
+            </a>
+          </p>
+          <p style="text-align:center">
+            <a href="https://gitlab.com/DhruvKoolRajamani/coman-orocos-pkg">  
+              <small>Navigate to OROCOS simulation</small>
+            </a>
+          </p>
+        <h4><i>Animal Locomotion</i></h4>
+        <p style="text-align:justify">
+          Developed a package using <i>ROS</i> along with appropriate analysis tools and controllers for simulating modular tetrapoda models with neuromechanical control algorithms.
+        </p>
+        <p style="text-align:center">
+          <a href="mailto:dhruvkoolrajamani@gmail.com?subject=Access to Swampy &body=Please allow me to access your ROS package on Tetrapod locomotion.">
+            <small>Click here to mail me and gain access to this repository</small>
+          </a>
+        </p>
+      </div>
+      <div class="col-sm-8 center">
+        <div class="embed-responsive embed-responsive-16by9 center">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GKYY119oyVY?ecver=2" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <br>
+        <p style="text-align:center">
+          <small>A comparison between the simulation and experiment</small>
+        </p>
+      </div>
+    </div>
+    <br>
+    <div class="row equal">
+      <div class="col-sm-6 center">
+        <video  width="100%" height="auto" autoplay loop controls muted>
+          <source src="assets/videos/stepping.mp4" type="video/mp4" />
+        </video>
+        <br>
+        <p style="text-align:center">
+          <br>
+          <small>Coman stepping in place</small>
+        </p>
+      </div>
+      <div class="col-sm-6 center">
+        <video  width="100%" height="auto" autoplay loop controls muted>
+          <source src="assets/videos/walking.mp4" type="video/mp4" />
+        </video>
+        <br>
+        <p style="text-align:center">
+          <br>
+          <small>Walking</small>
+        </p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <div class="row equal">
+      <div class="col-sm-8 center">
+        <div class="embed-responsive embed-responsive-16by9 center">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iwXFnWlh8UY?ecver=2" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <br>
+        <p style="text-align:center">
+          <small>A 4-link manipulator actuated by 2 non-colinear input forces, following a circular path.</small>
+        </p>
+      </div>
+      <div class="col-sm-4 center">
+        <div>
+          <a href="http://robotics.iitd.ac.in/ARL/">
+            <img style="margin:0px auto;display:block" src="assets/img/Experience/iitd.png" height="50" width="250">
+          </a>
+        </div>
+        <h4><i>Underactuated Flexible Manipulator</i></h4>
+        <p style="text-align:justify">
+          Designed a 3-link and 4-link planar manipulator on MATLAB and implemented a nonlinear control theory called <i>Differential Flatness</i>, allowing the end effector on the manipulator to follow a desired trajectory with just 2 non-colinear input forces.
+          <br>
+          <br>
+          <i>What's Next?</i>
+          <br>
+          I hope to extend this theory to n-links and actually make a physical robot to validate my simulations.
+        </p>
+        <!-- <p style="text-align:center">
+          <a href="https://gitlab.com/DhruvKoolRajamani/coman-ros-pkg">  
+            <small>Navigate to ROS simulation</small>
+          </a>
+        </p> -->
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <div class="row equal">
+      <div class="col-sm-4 center">
+        <div>
+          <a href="http://www.marsrovermanipal.com/index.html">
+            <img style="margin:0px auto;display:block" src="assets/img/Experience/mrm.png" height="75" width="75">
+          </a>
+        </div>
+        <p style="text-align:center">
+          <br>
+          <i>Best Rover team from Asia (2017)</i><br>
+          <small>We participate regularly at the <a href="http://urc.marssociety.org/"><b>University Rover Challenge</b></a></small>
+        </p>
+        <h4><i>Mars Rover</i></h4>
+        <p style="text-align:justify">
+          Developed a Mars Rover prototype that flaunts a modified rocker-bogie suspension, low pressure balloon tires, custom designed scientific testing mechanism, 6-DOF Robotic Arm and can run autonomously for as long as an hour.
+        </p>        
+        <h4><i>Robotic Arm Lead</i></h4>
+        <p style="text-align:justify">
+          Other than developing the entire Rover, I was in charge of designing a 6-DOF Robotic Arm that fit the competition criteria with added features such as a self-adapting parallel jawed gripper and a modular assembly (for easy replacement of parts).
+        </p>
+        <!-- <p style="text-align:center">
+          <a href="">
+            <small><i>Check out my publication on the self-adapting linear gripper</i></small>
+          </a>
+        </p> -->
+        <p style="text-align:center">
+          <a href="https://bangaloremirror.indiatimes.com/news/state/manipal-teams-mars-rover-hits-the-mark/articleshow/59005672.cms">  
+            <small><i>Our team stood 8th out of 82 teams at the URC, 2017</i></small>
+          </a>
+        </p>
+        <p style="text-align:center">
+          <a href="http://www.marsrovermanipal.com/index.html">  
+            <small>Navigate to MRM's website</small>
+          </a>
+        </p>
+        <br>
+        <br>
+      </div>
+      <div class="col-sm-8 center">
+        <br>
+        <br>
+        <div class="embed-responsive embed-responsive-16by9 center">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IulFNAjDEFo?ecver=2" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <br>
+        <p style="text-align:center">
+          <small>The Rover at the University Rover Challenge, 2017</small>
+        </p>
+      </div>
+    </div>
+    <div class="row equal">
+      <div class="col-sm-6 center">
+        <video  width="100%" height="auto" autoplay loop controls muted>
+          <source src="assets/videos/cooler-master.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="col-sm-6 center">
+        <video  width="100%" height="auto" autoplay loop controls muted>
+          <source src="assets/videos/mrmloop.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <p style="text-align:center">
+        <small>The Rover during a demonstration for Cooler Masters</small>
+        <br>
+        <br>
+      </p>
+    </div>
+    <div class="row text-center">
+      <h3>
+        Minor Projects
+      </h3>
+      <hr>
+    </div>
+    <div class="row equal">
+      <div class="col-sm-12 center">
+        <ol type="1">
+          <li>
+            <h5>Obstacle detection and Path planning for a mobile autonomous robot using computer vision and fuzzy logic</h5>
+              - Implemented a heuristic based fuzzy logic approach for path planning through an unknown environment.
+          </li>
+          <li>
+            <h5>Traffic Detection using a Kalman Filter</h5>
+              - MATLAB Project to detect moving vehicles in a video feed from a traffic camera using Kalman filter and Feature detection.
+          </li>
+          <li>
+            <h5>LQR based control of a 3-link Linear Inverted Pendulum model (LIP)</h5>
+              - Analysed the motion of a 3 link inverted pendulum on a moving base and design an optimal LQR based controller.
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="row center text-center">
+      <br>
+      <br>
+      <a href="#about" class="btn btn-primary btn-lg page-scroll">Back to Top</a>
+      <a class="btn btn-primary btn-lg page-scroll" href="https://gitlab.com/users/DhruvKoolRajamani/contributed">Projects</a>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+</div>
+<!-- Projects Section -->
+<div id="projects">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>Gallery</h2>
+      <hr>
+    </div>
+    <div class="categories">
+      <ul class="cat">
+        <li><a id="proj" data-filter="*" class="btn btn-default btn-lg page-scroll active">My Robots</a></li>
+        <li><a id="proj" data-filter=".mrm" class="btn btn-default btn-lg page-scroll">Mars Rover</a></li>
+        <li><a id="proj" data-filter=".coman" class="btn btn-default btn-lg page-scroll">COMAN Robot</a></li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="portfolio-items">
+        <div class="col-sm-6 col-md-3 col-lg-3 mrm">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="assets/img/projects/mrm/Rover1.JPG" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Mars Rover</h4>
+                <small>URC-2017</small> </div>
+              <img src="assets/img/projects/mrm/Rover1Small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 mrm">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="assets/img/projects/mrm/Rover2.JPG" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Mars Rover</h4>
+                <small>URC-2017</small> </div>
+              <img src="assets/img/projects/mrm/Rover2Small.JPG" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 mrm">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="assets/img/projects/mrm/Rover3.JPG" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Mars Rover</h4>
+                <small>URC-2017</small> </div>
+              <img src="assets/img/projects/mrm/Rover3Small.JPG" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 mrm">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="assets/img/projects/mrm/Rover4.JPG" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Mars Rover</h4>
+                <small>URC-2017</small> </div>
+              <img src="assets/img/projects/mrm/Rover4Small.JPG" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 mrm">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="assets/img/projects/mrm/Rover5.JPG" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Mars Rover</h4>
+                <small>URC-2017</small> </div>
+              <img src="assets/img/projects/mrm/Rover5Small.JPG" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 coman">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="assets/img/projects/coman/Robot.jpg" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Hardware Interfacing</h4>
+                <small>COMAN Robot</small> </div>
+              <img src="assets/img/projects/coman/RobotSmall.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 coman">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="assets/img/projects/coman/Coman1.png" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Simulation Still</h4>
+                <small>COMAN Robot</small> </div>
+              <img src="assets/img/projects/coman/Coman1Small.png" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 coman">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="assets/img/projects/coman/Coman2.png" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Simulation Still</h4>
+                <small>COMAN Robot</small>
+              </div>
+              <img src="assets/img/projects/coman/Coman2Small.png" class="img-responsive" alt="Project Title"> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <p style="text-align:center">
+        <a href="#about" class="btn btn-primary btn-lg page-scroll">Back to Top</a>
+        <a class="btn btn-primary btn-lg page-scroll" href="https://gitlab.com/users/DhruvKoolRajamani/contributed">Projects</a>
+      </p>
+    </div>
+  </div>
+</div>
+<div id="videos">
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="section-title text-center center">
+      <h2>Videos</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 center">
+        <img width="100%" height="auto" src="assets/img/projects/coman/coman-cool.jpg" />
+      </div>
+      <div class="col-sm-8 center">
+        <video width="100%" height="auto" loop controls>
+          <source src="assets/videos/rajuvideo-comp.mp4" type="video/mp4" />
+        </video>
+        <br>
+        <p style="text-align:center">
+          <br>
+          A blooper reel of all the simulations that went wrong.
+          <br>
+          <small>Viewer discretion advised</small>
+        </p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+      <p style="text-align:center">
+        <a href="#about" class="btn btn-primary btn-lg page-scroll">Back to Top</a>
+        <a class="btn btn-primary btn-lg page-scroll" href="https://gitlab.com/users/DhruvKoolRajamani/contributed">Projects</a>
+      </p>
+    </div>
+    <br>
+    <br>
+    <br>
+  </div>
+</div>
+<!-- Resume Section -->
+<div id="resume" class="text-center">
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="section-title center">
+      <h2>Resume</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div id="Iframe-Master-CC-and-Rs" class="set-margin set-padding set-border set-box-shadow center-block-horiz">
+        <div class="responsive-wrapper 
+           responsive-wrapper-wxh-572x612"
+           style="-webkit-overflow-scrolling: touch; overflow: auto;">
+      
+          <iframe src="assets/resume/dhruv_resume.pdf"> 
+            <p style="font-size: 110%;"><em><strong>ERROR: </strong>  
+      An &#105;frame should be displayed here but your browser version does not support &#105;frames. </em>Please update your browser to its most recent version and try again.</p>
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <a href="assets/resume/dhruv_resume.pdf" class="btn btn-default btn-lg page-scroll" download>Download</a>
+      <a href="#about" class="btn btn-default btn-lg page-scroll">Back to Top</a>
+      <a class="btn btn-default btn-lg page-scroll" href="https://gitlab.com/users/DhruvKoolRajamani/contributed">Projects</a>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+<div id="publications" class="text-center">
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="section-title center">
+      <h2>publications</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <dl>
+        <dt><h3>2018</h3></dt>
+        <dd>
+          <ol>
+            <li>
+              <p style="text-align:justify">
+                <b>Rajamani, D. K.</b>, E. D. Pitchika, K. S. Dhankar, and Y. S. Upadhyaya. ”Design and Development of a Linear Jawed Gripper for   Unstructured Environments.” <a href="https://ejournal.manipal.edu/mjst/journal_home.aspx"> Manipal Journal of Science and Technology </a> 3, no. 1 (June 2018). <a href="">[<i>Link</i>] </a>
+              </p>
+            </li>
+          </ol>
+        </dd>
+      </dl>
+      <p style="text-align:justify">
+        <strong>
+          
+        </strong>
+      </p>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+<!-- Contact Section -->
+<div id="contact" class="text-center">
+  <div class="overlay">
+    <div class="container">
+      <div class="section-title center">
+        <h2>Get In Touch</h2>
+        <hr>
+      </div>
+      <div class="col-md-8 col-md-offset-2">
+        <!-- <form name="sentMessage" id="contactForm" novalidate>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+            <p class="help-block text-danger"></p>
+          </div>
+          <div id="success"></div>
+          <button type="submit" class="btn btn-default">Send Message</button>
+        </form> -->
+        <div class="row">
+          <a href="mailto:dhruvkoolrajamani@gmail.com" class="btn btn-default btn-lg page-scroll" download>Send a Mail</a>
+          <a href="#about" class="btn btn-default btn-lg page-scroll">Back to Top</a>
+          <a class="btn btn-default btn-lg page-scroll" href="https://gitlab.com/users/DhruvKoolRajamani/contributed">Projects</a>
+        </div>
+        <div class="social">
+          <ul>
+            <li><a href="https://github.com/DhruvKoolRajamani"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://gitlab.com/DhruvKoolRajamani"><i class="fa fa-git"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/dhruv-rajamani-563101131/"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+
+<script type="text/javascript" src="assets/js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="assets/js/bootstrap.js"></script> 
+<script type="text/javascript" src="assets/js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="assets/js/easypiechart.js"></script> 
+<script type="text/javascript" src="assets/js/jquery.prettyPhoto.js"></script> 
+<script type="text/javascript" src="assets/js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="assets/js/jquery.counterup.js"></script> 
+<script type="text/javascript" src="assets/js/waypoints.js"></script> 
+<script type="text/javascript" src="assets/js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="assets/js/contact_me.js"></script> 
+<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
