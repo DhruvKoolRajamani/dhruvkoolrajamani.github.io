@@ -7425,7 +7425,7 @@ input.mdl-button[type="submit"] {
   -webkit-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
-  width: 240px;
+  width: 300px;
   height: 100%;
   max-height: 100%;
   position: absolute;
@@ -7435,8 +7435,8 @@ input.mdl-button[type="submit"] {
   box-sizing: border-box;
   border-right: 1px solid rgb(224,224,224);
   background: rgb(250,250,250);
-  -webkit-transform: translateX(-250px);
-          transform: translateX(-250px);
+  -webkit-transform: translateX(-310px);
+          transform: translateX(-310px);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   will-change: transform;

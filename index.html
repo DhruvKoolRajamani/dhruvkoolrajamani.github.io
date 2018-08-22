@@ -69,10 +69,12 @@
   </head>
 
   <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer">
       <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
-          <span class="mdl-navigation__link" ><h4>Dhruv Kool Rajamani</h4></span>
+          &nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;
+          <a href="#top"><span class="mdl-navigation__link" ><h4>Dhruv Kool Rajamani</h4></span></a>
           
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
@@ -87,6 +89,43 @@
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#contact">Contact</a>
             </nav>
           </div>
+          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+            <li class="mdl-menu__item">
+              <div class="social">
+                <!-- <a href="https://github.com/DhruvKoolRajamani"><i class="fa fa-github"></i></a>
+                <a href="https://gitlab.com/DhruvKoolRajamani"><i class="fa fa-git"></i></a> -->
+                <a href="https://www.linkedin.com/in/dhruv-rajamani-563101131/"><i class="fa fa-linkedin"></i></a>
+                LinkedIn
+              </div>
+            </li>
+            <li class="mdl-menu__item">
+              <div class="social">
+                <!-- <a href="https://github.com/DhruvKoolRajamani"><i class="fa fa-github"></i></a> -->
+                <a href="https://gitlab.com/DhruvKoolRajamani"><i class="fa fa-git"></i></a>
+                <!-- <a href="https://www.linkedin.com/in/dhruv-rajamani-563101131/"><i class="fa fa-linkedin"></i></a> -->
+                GitLab
+              </div>
+            </li>
+            <li class="mdl-menu__item">
+              <div class="social">
+                <a href="https://github.com/DhruvKoolRajamani"><i class="fa fa-github"></i></a>
+                <!-- <a href="https://gitlab.com/DhruvKoolRajamani"><i class="fa fa-git"></i></a> -->
+                <!-- <a href="https://www.linkedin.com/in/dhruv-rajamani-563101131/"><i class="fa fa-linkedin"></i></a> -->
+                GitHub
+              </div>
+            </li>
+            <li class="mdl-menu__item">
+              <div class="social">
+                <a href="mailto:dhruvkoolrajamani@gmail.com"><i class="fa .fa-mail-forward"></i></a>
+                <!-- <a href="https://gitlab.com/DhruvKoolRajamani"><i class="fa fa-git"></i></a> -->
+                <!-- <a href="https://www.linkedin.com/in/dhruv-rajamani-563101131/"><i class="fa fa-linkedin"></i></a> -->
+                Mail Me
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
 <!-- mdl-color--blue-grey-800 -->
@@ -95,6 +134,7 @@
           <div class="mdl-layout-spacer"></div>
           <img src="assets/img/aboutsmall.png" class="demo-avatar">
           <span class="mdl-navigation__link" ><h5>Dhruv Kool Rajamani</h5></span>
+          <a class="mdl-navigation__link" href="mailto:dhruvkoolrajamani@gmail.com"><span class="mdl-navigation__link" style="font-weight: 600">dhruvkoolrajamani@gmail.com</span></a>
         </div>
         <nav class="mdl-navigation">
           <div class="android-drawer-separator"></div>
@@ -104,11 +144,21 @@
           <div class="android-drawer-separator"></div>
           <a href="https://gitlab.com/users/DhruvKoolRajamani/contributed"><span class="mdl-navigation__link">Projects</span></a>
           <a class="mdl-navigation__link" href="#experience">Experience</a>
-          <a class="mdl-navigation__link" href="#gallery">Gallery</a>
           <a class="mdl-navigation__link" href="#resume" download>Resume</a>
 
+          <span class="mdl-navigation__link">Media</span>
+          <a class="mdl-navigation__link" href="#gallery">Gallery</a>
+          <a class="mdl-navigation__link" href="#videos">Videos</a>
+
+          <span class="mdl-navigation__link">Publications and Conferences</span>
+          <a class="mdl-navigation__link" href="#publications">Publications</a>
+          <a class="mdl-navigation__link" href="#publications">Conferences</a>
+
           <div class="android-drawer-separator"></div>
-          <a href="#contact"><span class="mdl-navigation__link">Contact</span></a>
+          <a href="mailto:dhruvkoolrajamani@gmail.com?subject=Hi Dhruv, Please tell me more about your work!"><span class="mdl-navigation__link">Contact</span></a>
+          <a class="mdl-navigation__link" href="https://www.linkedin.com/in/dhruv-rajamani-563101131/">LinkedIn</a>
+          <a class="mdl-navigation__link" href="https://gitlab.com/DhruvKoolRajamani">GitLab</a>
+          <a class="mdl-navigation__link" href="https://github.com/DhruvKoolRajamani">GitHub</a>
         </nav>
       </div>
 
@@ -117,14 +167,18 @@
         <div class="intro text-center">
           <div class="overlay">
             <div class="container">
+              <br>
+              <br>
+              <br>
               <div class="mdl-typography--text-center">
-                <div class="intro-text">
+                <div class="intro-text center mdl-typography--text-uppercase">
                   <div class="logo-font android-slogan">Dhruv Kool Rajamani</div>
                   <div class="logo-font android-sub-slogan">Roboticist</div>
                   <div class="logo-font android-create-character">
                     <a href="#about">
                       <button class="btn btn-default btn-lg page-scroll">Learn More</button>
                     </a>
+                    &nbsp;&nbsp;&nbsp;
                     <a href="#resume"> 
                       <button class="btn btn-default btn-lg page-scroll" download>Resume</button>
                     </a>
@@ -199,9 +253,11 @@
               <a href="#experience">
                 <button class="btn btn-primary btn-lg page-scroll">Experience</button>
               </a>
+              &nbsp;&nbsp;&nbsp;
               <a href="##top">
                 <button class="btn btn-primary btn-lg page-scroll">Home</button>
               </a>
+              &nbsp;&nbsp;&nbsp;
               <a href="#resume">
                 <button class="btn btn-primary btn-lg page-scroll">Resume</button>
               </a>
@@ -418,6 +474,7 @@
               <a href="#top">
                 <button class="btn btn-primary btn-lg page-scroll">Home</button>
               </a>
+              &nbsp;&nbsp;&nbsp;
               <a href="https://gitlab.com/users/DhruvKoolRajamani/contributed">
                 <button class="btn btn-primary btn-lg page-scroll">Projects</button>
               </a>
@@ -567,9 +624,11 @@
                 <a href="#experience">
                   <button class="btn btn-primary btn-lg page-scroll">Experience</button>
                 </a>
+                &nbsp;&nbsp;&nbsp;
                 <a href="#top">
                   <button class="btn btn-primary btn-lg page-scroll">Home</button>
                 </a>
+                &nbsp;&nbsp;&nbsp;
                 <a href="#resume">
                   <button class="btn btn-primary btn-lg page-scroll">Resume</button>
                 </a>
@@ -604,6 +663,7 @@
               <div class="row">
                 <p style="text-align:center">
                   <a href="#about" class="btn btn-primary btn-lg page-scroll">Back to Top</a>
+                  &nbsp;&nbsp;&nbsp;
                   <a class="btn btn-primary btn-lg page-scroll" href="https://gitlab.com/users/DhruvKoolRajamani/contributed">Projects</a>
                 </p>
               </div>
@@ -623,7 +683,7 @@
                 <div id="Iframe-Master-CC-and-Rs" class="set-margin set-padding set-border set-box-shadow center-block-horiz">
                   <div class="responsive-wrapper responsive-wrapper-wxh-572x612" style="-webkit-overflow-scrolling: touch; overflow: auto;">
                 
-                    <iframe src="assets/resume/dhruv_resume.pdf" width="70%" height="750px"> 
+                    <iframe src="assets/resume/dhruv_resume.pdf" class="resume-resp"> 
                       <p style="font-size: 110%;"><em><strong>ERROR: </strong>  
                 An &#105;frame should be displayed here but your browser version does not support &#105;frames. </em>Please update your browser to its most recent version and try again.</p>
                     </iframe>
@@ -635,12 +695,12 @@
               <br>
               <div class="mdl-cell mdl-cell--12-col">
                 <a href="assets/resume/dhruv_resume.pdf" class="btn btn-default btn-lg page-scroll" download>Download</a>
+                &nbsp;&nbsp;&nbsp;
                 <a href="#about" class="btn btn-default btn-lg page-scroll">Back to Top</a>
+                &nbsp;&nbsp;&nbsp;
                 <a class="btn btn-default btn-lg page-scroll" href="https://gitlab.com/users/DhruvKoolRajamani/contributed">Projects</a>
               </div>
             </div>
-            <br>
-            <br>
             <br>
             <br>
             <br>
@@ -666,103 +726,84 @@
                 </dl>
               </div>
             </div>
+            <br>
+            <br>
           </div>
-          <!--Forms-->
-          <div id="contact" class="text-center">
+          <!--Contact-->
+          <!-- <div id="contact" class="text-center">
             <div class="overlay">
               <div class="container">
-                <div class="section-title center">
+                <div class="section-title center text-center mdl-typography--text-uppercase">
                   <h2>Get In Touch</h2>
                   <hr>
                 </div>
-                <div class="col-md-8 col-md-offset-2">
-                  <form name="sentMessage" id="contactForm" novalidate>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-                          <p class="help-block text-danger"></p>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-                          <p class="help-block text-danger"></p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-                      <p class="help-block text-danger"></p>
-                    </div>
-                    <div id="success"></div>
-                    <button type="submit" class="btn btn-default">Send Message</button>
-                  </form>
-                  <div class="row">
-                    <a href="mailto:dhruvkoolrajamani@gmail.com" class="btn btn-default btn-lg page-scroll" download>Send a Mail</a>
-                    <a href="#about" class="btn btn-default btn-lg page-scroll">Back to Top</a>
-                    <a class="btn btn-default btn-lg page-scroll" href="https://gitlab.com/users/DhruvKoolRajamani/contributed">Projects</a>
-                  </div>
-                  <div class="social">
-                    <ul>
-                      <li><a href="https://github.com/DhruvKoolRajamani"><i class="fa fa-github"></i></a></li>
-                      <li><a href="https://gitlab.com/DhruvKoolRajamani"><i class="fa fa-git"></i></a></li>
-                      <li><a href="https://www.linkedin.com/in/dhruv-rajamani-563101131/"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
+                <div class="mdl-cell mdl-cell--12-col">
+                  <div class="mdl-typography--text-center">
+                    <a href="mailto:dhruvkoolrajamani@gmail.com">
+                      <button class="btn btn-default btn-lg page-scroll">Send a Mail</button>
+                    </a>
+                    <a href=https://gitlab.com/DhruvKoolRajamani>
+                      <button class="btn btn-default btn-lg page-scroll">GitLab</button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dhruv-rajamani-563101131/">
+                      <button class="btn btn-default btn-lg page-scroll">LinkedIn</button>
+                    </a>
                   </div>
                 </div>
               </div>      
             </div>
-          </div>     
+          </div>      -->
+        <div id="contact" class="text-center">
+          <div class="overlay">
+            <footer class="mdl-mega-footer" style="background: transparent;">
+                  <div class="mdl-mega-footer--top-section">
+                    <div class="mdl-mega-footer--center-section">
+                      <a class="waves-effect waves-light btn-floating btn-large social" href="https://www.linkedin.com/in/dhruv-rajamani-563101131/">
+                        <i class="fa fa-linkedin"></i>
+                      </a>
+                      &nbsp;
+                      <a class="waves-effect waves-light btn-floating btn-large social" href="https://gitlab.com/DhruvKoolRajamani">
+                        <i class="fa fa-git"></i>
+                      </a>
+                      
+                      <a class="waves-effect waves-light btn-floating btn-large social" href="https://github.com/DhruvKoolRajamani">
+                        <i class="fa fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
 
-        <footer class="android-footer mdl-mega-footer">
-          <div class="mdl-mega-footer--top-section">
-            <div class="mdl-mega-footer--left-section">
-              <button class="mdl-mega-footer--social-btn"></button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
-            </div>
-            <div class="mdl-mega-footer--right-section">
-              <a class="mdl-typography--font-light" href="#top">
-                Home
-                <i class="material-icons">expand_less</i>
-              </a>
-            </div>
+                  <div class="mdl-mega-footer--middle-section">
+                    <p class="mdl-typography--font-light">Framework: MIT License, Bootstrap</p>
+                    <p class="mdl-typography--font-light"> © Google</p>
+                  </div>
+
+                  <!-- <div class="mdl-mega-footer--bottom-section">
+                    <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
+                      Versions
+                      <i class="material-icons">arrow_drop_up</i>
+                    </a>
+                    <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
+                      <li class="mdl-menu__item">5.0 Lollipop</li>
+                      <li class="mdl-menu__item">4.4 KitKat</li>
+                      <li class="mdl-menu__item">4.3 Jelly Bean</li>
+                      <li class="mdl-menu__item">Android History</li>
+                    </ul>
+                    <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
+                      For Developers
+                      <i class="material-icons">arrow_drop_up</i>
+                    </a>
+                    <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
+                      <li class="mdl-menu__item">App developer resources</li>
+                      <li class="mdl-menu__item">Android Open Source Project</li>
+                      <li class="mdl-menu__item">Android SDK</li>
+                      <li class="mdl-menu__item">Android for Work</li>
+                    </ul>
+                    <a class="android-link mdl-typography--font-light" href="">Blog</a>
+                    <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
+                  </div> -->
+            </footer>
           </div>
-
-          <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">Satellite imagery: © 2014 Astrium, DigitalGlobe</p>
-            <p class="mdl-typography--font-light">Some features and devices may not be available in all areas</p>
-          </div>
-
-          <div class="mdl-mega-footer--bottom-section">
-            <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
-              Versions
-              <i class="material-icons">arrow_drop_up</i>
-            </a>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
-              <li class="mdl-menu__item">5.0 Lollipop</li>
-              <li class="mdl-menu__item">4.4 KitKat</li>
-              <li class="mdl-menu__item">4.3 Jelly Bean</li>
-              <li class="mdl-menu__item">Android History</li>
-            </ul>
-            <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
-              For Developers
-              <i class="material-icons">arrow_drop_up</i>
-            </a>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
-              <li class="mdl-menu__item">App developer resources</li>
-              <li class="mdl-menu__item">Android Open Source Project</li>
-              <li class="mdl-menu__item">Android SDK</li>
-              <li class="mdl-menu__item">Android for Work</li>
-            </ul>
-            <a class="android-link mdl-typography--font-light" href="">Blog</a>
-            <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
-          </div>
-
-        </footer>
+        </div>
       </div>
     </div>
     <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/android-dot-com/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
