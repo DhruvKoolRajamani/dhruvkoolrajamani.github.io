@@ -299,7 +299,7 @@ ol.type li a:hover {
 	opacity: 1;
 }
 #gallery {
-	padding: 50px 0;
+	padding: 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100 */
 	background: #f6f6f6; /* Old browsers */
 	background: -moz-linear-gradient(left, #f6f6f6, #f6f6f6); /* FF3.6-15 */
@@ -837,6 +837,53 @@ a img{
 
 .android-link-menu:hover {
   cursor: pointer;
+}
+
+.carousel .item {
+  width: 100%; /*slider width*/
+  max-height: 900px; /*slider height*/
+  /* margin-top:-50px; */
+}
+.carousel .item img {
+  width: 100%; /*img width*/
+}
+/*full width container*/
+@media (max-width: 900px) {
+  .block {
+      margin-left: -20px;
+      margin-right: -20px;
+  }
+}
+.carousel-fade {
+  .carousel-inner {
+      .item {
+          transition-property: opacity;
+      }
+      
+      .item,
+      .active.left,
+      .active.right {
+          opacity: 0;
+      }
+
+      .active,
+      .next.left,
+      .prev.right {
+          opacity: 1;
+      }
+
+      .next,
+      .prev,
+      .active.left,
+      .active.right {
+          left: 0;
+          transform: translate3d(0, 0, 0);
+      }
+  }
+
+  .carousel-control {
+      z-index: 2;
+  }
 }
 
 
