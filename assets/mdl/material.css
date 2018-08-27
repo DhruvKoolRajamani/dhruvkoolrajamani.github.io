@@ -7569,8 +7569,8 @@ input.mdl-button[type="submit"] {
     .mdl-layout__header {
       min-height: 56px; } }
   .mdl-layout--fixed-drawer.is-upgraded:not(.is-small-screen) > .mdl-layout__header {
-    margin-left: 240px;
-    width: calc(100% - 240px); }
+    margin-left: 300px;
+    width: calc(100% - 300px); }
   @media screen and (min-width: 1025px) {
     .mdl-layout--fixed-drawer > .mdl-layout__header .mdl-layout__header-row {
       padding-left: 40px; } }
@@ -7728,7 +7728,7 @@ input.mdl-button[type="submit"] {
   z-index: 1;
   -webkit-overflow-scrolling: touch; }
   .mdl-layout--fixed-drawer > .mdl-layout__content {
-    margin-left: 240px; }
+    margin-left: 300px; }
   .mdl-layout__container.has-scrolling-header .mdl-layout__content {
     overflow: visible; }
   @media screen and (max-width: 1024px) {
