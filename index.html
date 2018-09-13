@@ -85,7 +85,7 @@
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#about">About</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#experience">Experience</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#minor">Projects</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#resume" download>Resume</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#resume">Resume</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#gallery">Gallery</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#contact">Contact</a>
             </nav>
@@ -145,7 +145,7 @@
           <div class="android-drawer-separator"></div>
           <a href="#minor"><span class="mdl-navigation__link">Projects</span></a>
           <a class="mdl-navigation__link" href="#experience">Experience</a>
-          <a class="mdl-navigation__link" href="#resume" download>Resume</a>
+          <a class="mdl-navigation__link" href="#resume">Resume</a>
           
           <div class="android-drawer-separator"></div>
           <span class="mdl-navigation__link">Media</span>
@@ -153,9 +153,8 @@
           <a class="mdl-navigation__link" href="#videos">Videos</a>
 
           <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link">Publications and Conferences</span>
+          <span class="mdl-navigation__link">Publications & Presentations</span>
           <a class="mdl-navigation__link" href="#publications">Publications</a>
-          <a class="mdl-navigation__link" href="#publications">Conferences</a>
 
           <div class="android-drawer-separator"></div>
           <a href="#contact"><span class="mdl-navigation__link">Contact</span></a>
@@ -205,29 +204,34 @@
               <hr>
             </div>
             <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet">
+              <!-- <div class="mdl-cell mdl-cell--6-col"> -->
+                <!-- <img src="assets/img/img1.jpg" alt="" width="100%"> -->
               <div class="mdl-cell mdl-cell--6-col">
-                <img src="assets/img/img1.jpg" alt="" width="100%">
-              <!-- <div class="mdl-cell mdl-cell--6-col slide" data-ride="carousel">
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">    
+                <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2000">    
                   <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
                   </ol>
                   <div class="carousel-inner">
                     <div class="item active">
-                     
+                      <img src="assets/img/img1.jpg" alt="">
                     </div>
                   
                     <div class="item">
-                      <img src="assets/img/img2.jpg" alt="">
+                      <img src="assets/img/img4.jpg" alt="">
                     </div>
                   
                     <div class="item">
                       <img src="assets/img/img3.jpg" alt="">
                     </div>
-                  </div> -->
-                  
+
+                    <div class="item">
+                      <img src="assets/img/img5.jpg" alt="">
+                    </div>
+                  </div>
+
                   <!-- Left and right controls -->
                   <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left"></span>
@@ -237,7 +241,7 @@
                     <span class="glyphicon glyphicon-chevron-right"></span>
                     <span class="sr-only">Next</span>
                   </a> -->
-                <!-- </div> -->
+                </div>
               </div>
               <div class="mdl-cell mdl-cell--6-col">
                 <p style="text-align:justify">
@@ -504,23 +508,40 @@
               <h2>Resume</h2>
               <hr>
             </div>
-            <div class="mdl-cell mdl-cell--12-col">
-              <div id="Iframe-Master-CC-and-Rs" class="set-margin set-padding set-border set-box-shadow center-block-horiz">
-                <div class="responsive-wrapper responsive-wrapper-wxh-572x612" style="-webkit-overflow-scrolling: touch; overflow: auto;">
-              
-                  <iframe src="assets/resume/dhruv_resume.pdf" class="resume-resp"> 
-                    <p style="font-size: 110%;"><em><strong>ERROR: </strong>  
-              An &#105;frame should be displayed here but your browser version does not support &#105;frames. </em>Please update your browser to its most recent version and try again.</p>
-                  </iframe>
+            <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet">
+              <div class="mdl-cell mdl-cell--6-col center">
+                <h3>Resume</h3>
+                <div id="Iframe-Master-CC-and-Rs" class="set-margin set-padding set-border set-box-shadow center-block-horiz">
+                  <div class="responsive-wrapper responsive-wrapper-wxh-572x612" style="-webkit-overflow-scrolling: touch; overflow: auto;">                
+                    <iframe src="assets/resume/dhruv_resume.pdf" class="resume-resp"> 
+                      <p style="font-size: 110%;"><em><strong>ERROR: </strong>  
+                An &#105;frame should be displayed here but your browser version does not support &#105;frames. </em>Please update your browser to its most recent version and try again.</p>
+                    </iframe>
+                  </div>
                 </div>
+                <br>
+                <a href="assets/resume/dhruv_resume.pdf" class="btn btn-default btn-lg page-scroll" download>Download</a>
+              </div>
+              <div class="mdl-cell mdl-cell--6-col center">
+                <h3>Curriculum Vitae</h3>
+                <div id="Iframe-Master-CC-and-Rs" class="set-margin set-padding set-border set-box-shadow center-block-horiz">
+                  <div class="responsive-wrapper responsive-wrapper-wxh-572x612" style="-webkit-overflow-scrolling: touch; overflow: auto;">                
+                    <iframe src="assets/resume/dhruv_cv.pdf" class="resume-resp"> 
+                      <p style="font-size: 110%;"><em><strong>ERROR: </strong>  
+                An &#105;frame should be displayed here but your browser version does not support &#105;frames. </em>Please update your browser to its most recent version and try again.</p>
+                    </iframe>
+                  </div>
+                </div>
+                <br>
+                <a href="assets/resume/dhruv_cv.pdf" class="btn btn-default btn-lg page-scroll" download>Download</a>
               </div>
             </div>
             <br>
             <br>
             <br>
-            <div class="mdl-cell mdl-cell--12-col">
+            <!-- <div class="mdl-cell mdl-cell--12-col">
               <a href="assets/resume/dhruv_resume.pdf" class="btn btn-default btn-lg page-scroll" download>Download</a>
-            </div>
+            </div> -->
           </div>
           <br>
           <br>
@@ -528,189 +549,80 @@
         </div>
         <!-- gallery Section -->
         <div id="gallery">
-          <!-- <div class="container">
-            <div class="section-title center text-center mdl-typography--text-uppercase">
-              <h2>Gallery</h2>
-              <hr>
+          <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2500">    
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>
+              <li data-target="#myCarousel" data-slide-to="6"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="assets/img/projects/mrm/Rover2.JPG" alt="">
+                <a href="#videos">
+                  <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                    <i class="material-icons">expand_more</i>
+                  </button>
+                </a>
+              </div>
+            
+              <div class="item">
+                <img src="assets/img/projects/mrm/Rover3.JPG" alt="">
+                <a href="#videos">
+                  <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                    <i class="material-icons">expand_more</i>
+                  </button>
+                </a>
+              </div>
+            
+              <div class="item">
+                <img src="assets/img/projects/mrm/Rover4.JPG" alt="">
+                <a href="#videos">
+                  <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                    <i class="material-icons">expand_more</i>
+                  </button>
+                </a>
+              </div>
+
+              <div class="item"> 
+                <img src="assets/img/projects/mrm/Rover5.JPG" alt="">
+                <a href="#videos">
+                  <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                    <i class="material-icons">expand_more</i>
+                  </button>
+                </a>
+              </div>
+
+              <div class="item"> 
+                <img src="assets/img/projects/mrm/Rover1.JPG" alt="">
+                <a href="#videos">
+                  <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                    <i class="material-icons">expand_more</i>
+                  </button>
+                </a>
+              </div>
+
+              <div class="item"> 
+                <img src="assets/img/projects/coman/Coman1.png" alt="">
+                <a href="#videos">
+                  <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                    <i class="material-icons">expand_more</i>
+                  </button>
+                </a>
+              </div>
+
+              <div class="item"> 
+                <img src="assets/img/projects/coman/Coman2.png" alt="">
+                <a href="#videos">
+                  <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                    <i class="material-icons">expand_more</i>
+                  </button>
+                </a>
+              </div>
             </div>
-          </div> -->
-              <!-- <div class="mdl-cell mdl-cell--12-col slide" data-ride="carousel"> -->
-                <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2500">    
-                  <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                    <li data-target="#myCarousel" data-slide-to="4"></li>
-                    <li data-target="#myCarousel" data-slide-to="5"></li>
-                    <li data-target="#myCarousel" data-slide-to="6"></li>
-                    <!-- <li data-target="#myCarousel" data-slide-to="7"></li> -->
-                  </ol>
-                  <div class="carousel-inner">
-
-                    <div class="item active">
-                      <img src="assets/img/projects/mrm/Rover2.JPG" alt="">
-                      <a href="#videos">
-                        <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-                          <i class="material-icons">expand_more</i>
-                        </button>
-                      </a>
-                    </div>
-                  
-                    <div class="item">
-                      <img src="assets/img/projects/mrm/Rover3.JPG" alt="">
-                      <a href="#videos">
-                        <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-                          <i class="material-icons">expand_more</i>
-                        </button>
-                      </a>
-                    </div>
-                  
-                    <div class="item">
-                      <img src="assets/img/projects/mrm/Rover4.JPG" alt="">
-                      <a href="#videos">
-                        <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-                          <i class="material-icons">expand_more</i>
-                        </button>
-                      </a>
-                    </div>
-
-                    <div class="item"> 
-                      <img src="assets/img/projects/mrm/Rover5.JPG" alt="">
-                      <a href="#videos">
-                        <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-                          <i class="material-icons">expand_more</i>
-                        </button>
-                      </a>
-                    </div>
-
-                    <div class="item"> 
-                      <img src="assets/img/projects/mrm/Rover1.JPG" alt="">
-                      <a href="#videos">
-                        <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-                          <i class="material-icons">expand_more</i>
-                        </button>
-                      </a>
-                    </div>
-
-                    <div class="item"> 
-                      <img src="assets/img/projects/coman/Coman1.png" alt="">
-                      <a href="#videos">
-                        <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-                          <i class="material-icons">expand_more</i>
-                        </button>
-                      </a>
-                    </div>
-
-                    <div class="item"> 
-                      <img src="assets/img/projects/coman/Coman2.png" alt="">
-                      <a href="#videos">
-                        <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-                          <i class="material-icons">expand_more</i>
-                        </button>
-                      </a>
-                    </div>
-
-                  </div>
-                  
-                  <!-- Left and right controls
-                  <a class="left carousel-control" data-target="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control" data-target="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div> -->
-              <!-- </div> -->
-              <!-- <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet center">
-                <div class="portfolio-items">
-                  <div class="mdl-cell mdl-cell--3-col center mrm">
-                    <div class="portfolio-item">
-                      
-                    </div>
-                  </div>
-                  <div class="mdl-cell mdl-cell--3-col center mrm">
-                    <div class="portfolio-item">
-                      <div class="hover-bg"> <a href="assets/img/projects/mrm/Rover2.JPG" title="Project description" rel="prettyPhoto">
-                        <div class="hover-text">
-                          <h4>Mars Rover</h4>
-                          <small>URC-2017</small> </div>
-                        <img src="assets/img/projects/mrm/Rover2Small.JPG" class="img-responsive" alt="Project Title"> </a> </div>
-                    </div>
-                  </div>
-                  <div class="mdl-cell mdl-cell--3-col center mrm">
-                    <div class="portfolio-item">
-                      <div class="hover-bg"> <a href="assets/img/projects/mrm/Rover3.JPG" title="Project description" rel="prettyPhoto">
-                        <div class="hover-text">
-                          <h4>Mars Rover</h4>
-                          <small>URC-2017</small> </div>
-                        <img src="assets/img/projects/mrm/Rover3Small.JPG" class="img-responsive" alt="Project Title"> </a> </div>
-                    </div>
-                  </div>
-                  <div class="mdl-cell mdl-cell--3-col center mrm">
-                    <div class="portfolio-item">
-                      <div class="hover-bg"> <a href="assets/img/projects/mrm/Rover4.JPG" title="Project description" rel="prettyPhoto">
-                        <div class="hover-text">
-                          <h4>Mars Rover</h4>
-                          <small>URC-2017</small> </div>
-                        <img src="assets/img/projects/mrm/Rover4Small.JPG" class="img-responsive" alt="Project Title"> </a> </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3 col-lg-3 mrm">
-                    <div class="portfolio-item">
-                      <div class="hover-bg"> <a href="assets/img/projects/mrm/Rover5.JPG" title="Project description" rel="prettyPhoto">
-                        <div class="hover-text">
-                          <h4>Mars Rover</h4>
-                          <small>URC-2017</small> </div>
-                        <img src="assets/img/projects/mrm/Rover5Small.JPG" class="img-responsive" alt="Project Title"> </a> </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3 col-lg-3 coman">
-                    <div class="portfolio-item">
-                      <div class="hover-bg"> <a href="assets/img/projects/coman/Robot.jpg" title="Project description" rel="prettyPhoto">
-                        <div class="hover-text">
-                          <h4>Hardware Interfacing</h4>
-                          <small>COMAN Robot</small> </div>
-                        <img src="assets/img/projects/coman/RobotSmall.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3 col-lg-3 coman">
-                    <div class="portfolio-item">
-                      <div class="hover-bg"> <a href="assets/img/projects/coman/Coman1.png" title="Project description" rel="prettyPhoto">
-                        <div class="hover-text">
-                          <h4>Simulation Still</h4>
-                          <small>COMAN Robot</small> </div>
-                        <img src="assets/img/projects/coman/Coman1Small.png" class="img-responsive" alt="Project Title"> </a> </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3 col-lg-3 coman">
-                    <div class="portfolio-item">
-                      <div class="hover-bg"> <a href="assets/img/projects/coman/Coman2.png" title="Project description" rel="prettyPhoto">
-                        <div class="hover-text">
-                          <h4>Simulation Still</h4>
-                          <small>COMAN Robot</small>
-                        </div>
-                        <img src="assets/img/projects/coman/Coman2Small.png" class="img-responsive" alt="Project Title"> </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-              <!-- <div class="section-title center text-center mdl-typography--text-uppercase">
-                <a href="#experience">
-                  <button class="btn btn-primary btn-lg page-scroll">Experience</button>
-                </a>
-                &nbsp;&nbsp;&nbsp;
-                <a href="#top">
-                  <button class="btn btn-primary btn-lg page-scroll">Home</button>
-                </a>
-                &nbsp;&nbsp;&nbsp;
-                <a href="#resume">
-                  <button class="btn btn-primary btn-lg page-scroll">Resume</button>
-                </a>
-              </div> -->
           </div>
           <div class="mdl-typography--text-center">
             <a href="#videos">
@@ -718,6 +630,7 @@
                 <i class="material-icons">expand_more</i>
               </button>
             </a>
+          </div>
           </div>
           <div id="videos">
             <div class="container">
@@ -765,52 +678,63 @@
           </div>
           <div id="publications" class="text-center">
             <div class="container">
-              <div class="section-title center text-center mdl-typography--text-uppercase">
-                <h2>publications</h2>
-                <hr>
-              </div>
-              <div class="mdl-cell mdl-cell--12-col">
-                <dl>
-                  <dt><h3>2018</h3></dt>
-                  <dd>
-                    <ol>
-                      <li>
-                        <p style="text-align:justify">
-                          <b>Rajamani, D. K.</b>, E. D. Pitchika, K. S. Dhankar, and Y. S. Upadhyaya. ”Design and development of a linear jawed gripper for unstructured environments” <a href="https://ejournal.manipal.edu/mjst/journal_home.aspx"> Manipal Journal of Science and Technology </a> 3, no. 1 (June 2018). <a href="assets/papers/3-paper.pdf">[<i>link</i>] </a>
-                        </p>
-                      </li>
-                    </ol>
-                  </dd>
-                </dl>
-              </div>
-            </div>
-            <br>
-            <br>
-          </div>
-          <!--Contact-->
-          <!-- <div id="contact" class="text-center">
-            <div class="overlay">
-              <div class="container">
-                <div class="section-title center text-center mdl-typography--text-uppercase">
-                  <h2>Get In Touch</h2>
-                  <hr>
-                </div>
-                <div class="mdl-cell mdl-cell--12-col">
-                  <div class="mdl-typography--text-center">
-                    <a href="mailto:dhruvkoolrajamani@gmail.com">
-                      <button class="btn btn-default btn-lg page-scroll">Send a Mail</button>
-                    </a>
-                    <a href=https://gitlab.com/DhruvKoolRajamani>
-                      <button class="btn btn-default btn-lg page-scroll">GitLab</button>
-                    </a>
-                    <a href="https://www.linkedin.com/in/dhruv-rajamani-563101131/">
-                      <button class="btn btn-default btn-lg page-scroll">LinkedIn</button>
-                    </a>
+              <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet center">
+                <div class="mdl-cell mdl-cell--6-col center">
+                  <div class="section-title center text-center mdl-typography--text-uppercase">
+                    <h2>publications</h2>
+                    <hr>
                   </div>
+                  <dl>
+                    <dt><h3>2018</h3></dt>
+                    <dd>
+                      <ol>
+                        <li>
+                          <p style="text-align:justify">
+                            <b>Rajamani, D. K.</b>, E. D. Pitchika, K. S. Dhankar, and Y. S. Upadhyaya. <b><i>”Design and development of a linear jawed gripper for unstructured environments”</i></b> <a href="https://ejournal.manipal.edu/mjst/journal_home.aspx"> Manipal Journal of Science and Technology </a> 3, no. 1 (June 2018). <a href="assets/papers/3-paper.pdf">[<i>link</i>] </a>
+                          </p>
+                        </li>
+                      </ol>
+                    </dd>
+                  </dl>
                 </div>
-              </div>      
+            <!-- <div id="presentations" class="text-center">
+              <div class="container"> -->
+                <div class="mdl-cell mdl-cell--6-col center">
+                  <div class="section-title center text-center mdl-typography--text-uppercase">
+                    <h2>presentations</h2>
+                    <hr>
+                  </div>
+                  <dl>
+                    <dt><h3>2017</h3></dt>
+                    <dd>
+                      <ol>
+                        <li>
+                          <p style="text-align:justify">
+                            <b>Rajamani, D. K.</b>, Pitchika, E. D., Dhankar K. S., Shorewala, S., Bansal, D., & Upadhyaya, Y. S.(n.d.). <b><i>"Design Overview of a Planetary Exploration Rover for Unstructured Terrain"</i></b>. <a href="https://www.inacomm2017.org/"> 3rd International and 18th National Conference on Machines & Mechanisms. </a> (December, 2017) 
+                            <!-- <a href="assets/papers/3-paper.pdf">[<i>link</i>] </a> -->
+                          </p>
+                        </li>
+                        <li>
+                          <p style="text-align:justify">
+                              <b>Rajamani, D. K.</b>, E. D. Pitchika, K. S. Dhankar, and Y. S. Upadhyaya. <b><i>”Design and development of a linear jawed gripper for unstructured environments”</i></b> <a href="">  International Conference on Applied Sciences, Engineering & Technology </a> (July 2017). <b>(ISBN: 978-93-5279-058-6)</b>
+                              <!-- <a href="assets/papers/3-paper.pdf">[<i>link</i>] </a> -->
+                          </p>
+                        </li>
+                        <li>
+                          <p style="text-align:justify">
+                            <b>Rajamani, D. K.</b>, Upadhyaya, Y. S., & Dhankar, K. S. (n.d.). <b><i>"A comparative Analysis of Industrial Grade Parallel Gripper and Linear Grippers."</i></b>. <a href=""> ISAB Industrial Automation and Control TechEvent Day, ISA Bangalore </a> (March, 2017) 
+                            <!-- <a href="assets/papers/3-paper.pdf">[<i>link</i>] </a> -->
+                          </p>
+                        </li>
+                      </ol>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+              <br>
+              <br>
             </div>
-          </div>      -->
+          </div>
         <div id="contact" class="text-center">
           <div class="overlay">
             <footer class="mdl-mega-footer" style="background: transparent;">
@@ -830,44 +754,21 @@
                     </div>
                   </div>
 
-                  <div class="mdl-mega-footer--middle-section">
-                    <p class="mdl-typography--font-light">Framework: MIT License, Bootstrap</p>
-                    <p class="mdl-typography--font-light"> © Google</p>
-                  </div>
-
                   <div class="mdl-mega-footer--bottom-section">
-                  <!--  <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
-                      Versions
-                      <i class="material-icons">arrow_drop_up</i>
-                    </a>
-                    <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
-                      <li class="mdl-menu__item">5.0 Lollipop</li>
-                      <li class="mdl-menu__item">4.4 KitKat</li>
-                      <li class="mdl-menu__item">4.3 Jelly Bean</li>
-                      <li class="mdl-menu__item">Android History</li>
-                    </ul>
-                    <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
-                      For Developers
-                      <i class="material-icons">arrow_drop_up</i>
-                    </a>
-                    <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
-                      <li class="mdl-menu__item">App developer resources</li>
-                      <li class="mdl-menu__item">Android Open Source Project</li>
-                      <li class="mdl-menu__item">Android SDK</li>
-                      <li class="mdl-menu__item">Android for Work</li>
-                    </ul>
-                    <a class="android-link mdl-typography--font-light" href="">Blog</a>
-                    <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a> -->
                     <div class="mdl-cell mdl-cell--12-col">
                       <a href="#top" class="btn btn-default btn-lg page-scroll">Home</a>
                     </div>
+                  </div>
+
+                  <div class="mdl-mega-footer--middle-section">
+                    <p class="mdl-typography--font-light">Framework: MIT License, Bootstrap</p>
+                    <p class="mdl-typography--font-light"> © Google</p>
                   </div>
             </footer>
           </div>
         </div>
       </div>
     </div>
-    <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/android-dot-com/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
     <script src="$$hosted_libs_prefix$$/$$version$$/material.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.1.11.1.js"></script> 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
