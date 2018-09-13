@@ -358,6 +358,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', end
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', endColorstr='#4977c2', GradientType=1 ); /* IE6-9 */
 }
 
+#publications h3 {
+  color: rgb(41, 41, 41);
+	font-size: 24px;
+	font-weight: 500;
+	margin-left: 0px;
+	text-transform: uppercase;
+}
+
 /* Contact Section */
 #contact {
 	color: #fff;
