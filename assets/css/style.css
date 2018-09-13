@@ -28,6 +28,13 @@ h5 {
   font-size: 22px;
 }
 
+h3 {
+	padding-top: 0px;
+	font-size: 30px;
+	font-weight: 400;
+	color: #fff;
+}
+
 .demo-drawer-header {
 	box-sizing: border-box;
 	display: flex;
@@ -395,8 +402,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d96b4da8', e
 .resume-resp {
   position: relative;
   /* overflow: hidden; */
-  width: 70%;
-  height: 700px;
+  width: 100%;
+  height: 600px;
 }
 
 /* Disable ugly boxes around images in IE10 */
@@ -966,7 +973,7 @@ a img{
   .resume-resp {
     position: relative;
     /* overflow: hidden; */
-    width: 70%;
+    width: 100%;
     height: 200px;
   }
 }
