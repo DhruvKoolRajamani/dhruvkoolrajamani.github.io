@@ -99,7 +99,19 @@ $('#nav').affix({
   	// Pretty Photo
 	$("a[rel^='prettyPhoto']").prettyPhoto({
 		social_tools: false
-	});	
+	});
+	
+	
+	// Typed JS
+	  var typed = $(".typed");
+
+	  $(function() {
+	    typed.typed({
+	      strings: ["Dhruv Kool Rajamani."],
+	      typeSpeed: 100,
+	      loop: true,
+	    });
+	  });	
 
 }());
 
