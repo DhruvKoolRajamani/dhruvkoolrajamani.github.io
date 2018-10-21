@@ -87,7 +87,24 @@
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#about">About</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#experience">Experience</a>
+              <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-navigation__link mdl-typography--text-uppercase" id="exp-button" href="#experience">Experience</a>
+                <ul class="mdl-menu mdl-js-menu" for="exp-button">
+                  <li class="mdl-menu__item">
+                    <a class="mdl-typography--text-uppercase" href="#brg">Biorobotics Group</a>
+                  </li>
+                  <li class="mdl-menu__item">
+                    <a class="mdl-typography--text-uppercase" href="#ta">Teaching Assistant</a>
+                  </li>
+                  <li class="mdl-menu__item">
+                    <a class="mdl-typography--text-uppercase" href="#biorob">Biorob, EPFL</a>
+                  </li>
+                  <li class="mdl-menu__item">
+                    <a class="mdl-typography--text-uppercase" href="#iit">Autonomous Robotics Lab, IIT-D</a>
+                  </li>
+                  <li class="mdl-menu__item">
+                    <a class="mdl-typography--text-uppercase" href="#mrm">Mars Rover Manipal</a>
+                  </li>
+                </ul>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#minor">Projects</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#resume">Resume</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#gallery">Gallery</a>
@@ -285,8 +302,64 @@
               <h2>Experience</h2>
               <hr>
             </div>
-            <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet">
-                <div class="mdl-cell mdl-cell--4-col center">
+            <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet center">
+              <div class="navbar-fixed">
+                <nav>
+                  <div class="nav-wrapper">
+                    <span>
+                      <a href="#brg" class="breadcrumb">Biorobotics Group</a>
+                      <a href="#ta" class="breadcrumb">Teaching Assistant</a>
+                      <a href="#biorob" class="breadcrumb">Biorob, EPFL</a>
+                      <a href="#iit" class="breadcrumb">Autonomous Robotics Lab, IIT-D</a>
+                      <a href="#mrm" class="breadcrumb">Mars Rover Manipal</a>
+                      <!-- <a href="#!" class="breadcrumb">Biorob, EPFL</a> -->
+                    </span>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet" id="brg">
+              <div class="mdl-cell mdl-cell--8-col center">
+                <div class="embed-responsive embed-responsive-16by9 center">
+                  <img src="assets/img/Experience/Pleurobot.png"/>
+                </div>
+                <p style="text-align:center">
+                  <small>The Pluerobot (BioRobotics Lab, EPFL) Ros Package</small>
+                </p>             
+              </div>
+              <div class="mdl-cell mdl-cell--4-col center">
+                <div>
+                  <a href="http://robotics.iitd.ac.in/ARL/">
+                    <img style="margin:0px auto;display:block" src="assets/img/Experience/BRG.jpeg" height="50" width="250">
+                  </a>
+                </div>
+                <h4><i>Co-Founder, Biorobotics Group Manipal</i></h4>
+                <p style="text-align:justify">
+                  <b>Aim:</b> To create a community of researchers that collectively contribute to research in Biorobotics.
+                  <br>
+                  &nbsp;&nbsp; Supervising a team of 12 undergraduate students.
+                  <br>
+                  &nbsp;Contributing to the ROS Community by creating educational packages for beginners.
+                  <ul>
+                    <li>
+                      <i>Pluerobot</i> (Designed at Biorob, EPFL)
+                    </li>
+                    <li>
+                      <i>Linear Inverted Pendulum</i>
+                    </li>
+                    <li>
+                      <i>COMAN Humanoid</i> (Designed at iit, Italy)
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet" id="biorob">
+              <div class="mdl-cell mdl-cell--4-col center">
                 <div>
                   <a href="https://biorob.epfl.ch/">
                     <img style="margin:0px auto;display:block" src="assets/img/Experience/biorob_en.svg" height="50" width="150">
@@ -345,7 +418,7 @@
             <hr>
             <br>
             <br>
-            <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet">
+            <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet" id="iit">
               <div class="mdl-cell mdl-cell--8-col center">
                 <div class="embed-responsive embed-responsive-16by9 center">
                   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iwXFnWlh8UY?ecver=2" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -376,7 +449,7 @@
             <br>
             <br>
             <hr>
-            <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet">
+            <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet" id="mrm">
               <div class="mdl-cell mdl-cell--4-col center">
                 <div>
                   <a href="http://www.marsrovermanipal.com/index.html">

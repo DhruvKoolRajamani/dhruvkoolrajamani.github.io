@@ -24,9 +24,13 @@ $('#nav').affix({
       }
 });	
 
-	// skills chart
+  $(document).ready(function() {
+    $(".mdl-js-button").dropdown();
+  });
+
+  // skills chart
 	$(document).ready(function(e) {
-	//var windowBottom = $(window).height();
+  //var windowBottom = $(window).height();
 	var index=0;
 	$(document).scroll(function(){
 		var top = $('#skills').height()-$(window).scrollTop();
