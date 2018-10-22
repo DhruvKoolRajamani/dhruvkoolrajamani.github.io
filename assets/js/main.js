@@ -24,7 +24,7 @@ $('#nav').affix({
       }
 });	
 
-  $(document).ready(function() {
+  $(document).ready(function($) {
     $(".mdl-js-button").dropdown();
   });
 
@@ -105,20 +105,33 @@ $('#nav').affix({
 		social_tools: false
 	});
 	
-	
-	// Typed JS
-	  var typed = $(".typed");
+	$(document).ready(function() {
+	  var expportfolioIsotope = $('.exp-portfolio-container').isotope({
+      itemSelector: '.exp-portfolio-thumbnail',
+      layoutMode: 'fitRows'
+    });
+  
+    $('#exp-portfolio-flters li').on( 'click', function() {
+      $("#exp-portfolio-flters li").removeClass('filter-active');
+      $(this).addClass('filter-active');
+  
+      expportfolioIsotope.isotope({ filter: $(this).data('filter') });
+    });	
+  });
 
-	  $(function() {
-	    typed.typed({
-	      strings: ["Dhruv Kool Rajamani."],
-	      typeSpeed: 100,
-	      loop: true,
-	    });
-	  });	
+  $(document).ready(function($) {
+    $('.services-carousel').owlCarousel({
+      autoplay: true,
+      loop: true,
+      margin: 20,
+      dots: true,
+      nav: false,
+      responsiveClass: true,
+      responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
+    });
+  });
 
 }());
-
 
 }
 main();

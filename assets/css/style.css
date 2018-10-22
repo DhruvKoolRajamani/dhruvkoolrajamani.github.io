@@ -32,7 +32,8 @@ h3 {
 	padding-top: 0px;
 	font-size: 30px;
 	font-weight: 400;
-	color: #fff;
+  color: rgb(78, 78, 78);
+  text-transform: uppercase;
 }
 
 .demo-drawer-header {
@@ -305,6 +306,7 @@ ol.type li a:hover {
 .hover-bg:hover .hover-text {
 	opacity: 1;
 }
+
 #gallery {
 	padding: 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100 */
@@ -323,6 +325,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', end
 	background: linear-gradient(to right, #ffffff, #ffffff); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', endColorstr='#4977c2', GradientType=1 ); /* IE6-9 */
 }
+
 #resume h2 {
 	color: #fff;
 }

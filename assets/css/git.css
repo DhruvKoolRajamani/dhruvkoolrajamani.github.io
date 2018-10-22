@@ -9,7 +9,7 @@
 }
 
 .github-box {
-	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-family: sans-serif;
 	background: #fafafa;
 	border: 1px solid #ddd;
 	color: #666;
@@ -35,7 +35,7 @@
 }
 
 .github-box .github-box-header h3 {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: sans-serif;
 	font-weight: normal;
 	font-size: 16px;
 	color: gray;
