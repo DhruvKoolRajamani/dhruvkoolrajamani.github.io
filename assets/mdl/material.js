@@ -655,7 +655,8 @@ componentHandler.register({
     constructor: MaterialButton,
     classAsString: 'MaterialButton',
     cssClass: 'mdl-js-button',
-    widget: true
+    // widget: true,
+    // hover: true
 });
 /**
  * @license
@@ -1351,7 +1352,7 @@ MaterialMenu.prototype.handleItemKeyboardEvent_ = function (evt) {
                 e = new MouseEvent('mouseup');
                 evt.target.dispatchEvent(e);
                 // Send click.
-                evt.target.click();
+                evt.target.click({ hover: true });
             } else if (evt.keyCode === this.Keycodes_.ESCAPE) {
                 evt.preventDefault();
                 this.hide();

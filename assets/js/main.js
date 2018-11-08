@@ -24,9 +24,13 @@ $('#nav').affix({
       }
 });	
 
-	// skills chart
+  $(document).ready(function($) {
+    $(".mdl-js-button").dropdown();
+  });
+
+  // skills chart
 	$(document).ready(function(e) {
-	//var windowBottom = $(window).height();
+  //var windowBottom = $(window).height();
 	var index=0;
 	$(document).scroll(function(){
 		var top = $('#skills').height()-$(window).scrollTop();
@@ -99,10 +103,35 @@ $('#nav').affix({
   	// Pretty Photo
 	$("a[rel^='prettyPhoto']").prettyPhoto({
 		social_tools: false
-	});	
+	});
+	
+	$(document).ready(function() {
+	  var expportfolioIsotope = $('.exp-portfolio-container').isotope({
+      itemSelector: '.exp-portfolio-thumbnail',
+      layoutMode: 'fitRows'
+    });
+  
+    $('#exp-portfolio-flters li').on( 'click', function() {
+      $("#exp-portfolio-flters li").removeClass('filter-active');
+      $(this).addClass('filter-active');
+  
+      expportfolioIsotope.isotope({ filter: $(this).data('filter') });
+    });	
+  });
+
+  $(document).ready(function($) {
+    $('.services-carousel').owlCarousel({
+      autoplay: true,
+      loop: true,
+      margin: 20,
+      dots: true,
+      nav: false,
+      responsiveClass: true,
+      responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
+    });
+  });
 
 }());
-
 
 }
 main();
