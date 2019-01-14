@@ -302,7 +302,7 @@ h5 {
 /* Publications
 ---------------------------------------------------*/
 #publications {
-  padding: 100px 0 200px 0;
+  padding: 200px 0 200px 0;
   background: #f6f6f6;
   
 }
@@ -313,6 +313,7 @@ h5 {
 
   #publications p {
     text-align: justify;
+    font-size: 18px;
   }
 
 /* Contact

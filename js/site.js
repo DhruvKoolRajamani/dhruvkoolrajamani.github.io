@@ -20,7 +20,7 @@ $(document).ready(function () {
         $loader.css({
             'animation': 'animatebottom 2s'
         });
-    }, 6950);
+    }, 7100);
     
     setTimeout(function () {
 
@@ -45,7 +45,7 @@ function onLoadComplete () {
         element: document.getElementById('intro'),
         handler: function(direction) {
             var typedTitle = new Typed('#typed-title', {
-                strings: ['<h1 class="display-1 intro-text">Dhruv Kool Rajamani</h1>^1000'],
+                strings: ['<h1 class="display-1 intro-text">Dhruv Kool Rajamani</h1>'],
                 typeSpeed: 50,
                 backSpeed: 20,
                 loop: false,
@@ -156,10 +156,6 @@ function carouselBackground (divId) {
     $item.height($wHeight);
     // $wWidth = $(window).width();
     // $item.width($wWidth);
-    });
-
-    $('.carousel').carousel({
-        interval: 1000
     });
     
     $item.eq(0).addClass('active');
