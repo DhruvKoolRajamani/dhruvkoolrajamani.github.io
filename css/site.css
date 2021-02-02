@@ -1,6 +1,55 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
 a.navbar-brand {
   white-space: normal;
   text-align: center;
@@ -36,6 +85,15 @@ h5 {
 }
 /* Navbar Override
 ---------------------------------------------------*/
+nav {
+  z-index: 3;
+}
+
+#navbarSupportedContent .nav-item .nav-link a:hover {
+  color: rgb(0, 0, 0);
+}
+
+
 /* Add a dark background color with a little bit see-through */
 #navigation-bar {
   background: rgba(0, 0, 0, 0.92);
@@ -58,6 +116,12 @@ h5 {
     font-size: 18px;
   }
 
+  #navigation-bar .nav-item .nav-link:hover {
+    background: rgba(111, 181, 190, 0.863);
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+  }
+
 /* Loading
 ---------------------------------------------------*/
 #loading {
@@ -75,6 +139,15 @@ h5 {
     /* width: 10%; */
     height: 100%;
     background: url(../BRG.png) no-repeat center;
+  }
+
+  #loading .loading-text {
+    width: 400px;
+    position: absolute;
+    color: #000;
+    top: calc(50% - 150px);
+    left: calc(50% - 200px);
+    text-align: center;
   }
 
   @keyframes animateflash {
@@ -105,7 +178,31 @@ h5 {
     color: rgb(136, 237, 255);
     transform: translateY(-50%);
     bottom: 0;
-    top: 60%;
+    top: 55%;
+  }
+  
+  #intro .carousel-subtitle {
+    text-align: left;
+    color: rgb(136, 237, 255);
+    transform: translate(0%, 500%);
+    bottom: 0;
+    top: 80%;
+    left: 10px;
+  }
+
+  #intro hr {
+    height: 2px;
+    width: 16%;
+    text-align: center;
+    position: relative;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b4da8+0,4977c2+100 */
+    background: rgb(136, 237, 255); /* Old browsers */
+    background: -moz-linear-gradient(left, rgb(0, 126, 148) 0%, rgb(136, 237, 255) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgb(0, 126, 148) 0%, rgb(136, 237, 255) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgb(0, 126, 148) 0%, rgb(136, 237, 255) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', endColorstr='#4977c2', GradientType=1 ); /* IE6-9 */
+    margin: 0 auto;
+    border: 0;
   }
 
   #intro .full-screen {
