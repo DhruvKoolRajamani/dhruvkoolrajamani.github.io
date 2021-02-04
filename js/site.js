@@ -48,7 +48,7 @@ function onLoadComplete() {
         handler: function (direction) {
             var typedTitle = new Typed('#typed-title', {
                 strings: [
-                  '<h1 class="display-1 intro-text">Dhruv Kool Rajamani</h1>'
+                    '<h1 class="display-1 intro-text">Dhruv Kool Rajamani</h1>'
                 ],
                 typeSpeed: 30,
                 loop: false,
@@ -81,10 +81,10 @@ function onLoadComplete() {
     function typeSubtitle() {
         var typedSubTitle = new Typed('#typed-subtitle', {
             strings: [
-              '<h1 class="display-1 intro-text">Human Robot Interaction</h1>^2000',
-              '<h1 class="display-1 intro-text">Surgical Robot Manipulation</h1>^2000',
-              '<h1 class="display-1 intro-text">Humanoid Robots</h1>^2000',
-              '<h1 class="display-1 intro-text">Mobile Robots</h1>^2000'
+                '<h1 class="display-1 intro-text">Human Robot Interaction</h1>^2000',
+                '<h1 class="display-1 intro-text">Surgical Robot Manipulation</h1>^2000',
+                '<h1 class="display-1 intro-text">Humanoid Robots</h1>^2000',
+                '<h1 class="display-1 intro-text">Mobile Robots</h1>^2000'
             ],
             typeSpeed: 30,
             backSpeed: 1,
